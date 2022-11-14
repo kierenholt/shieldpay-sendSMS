@@ -16,6 +16,6 @@ exports.handler = function(event, context) {
         //TopicArn: "arn:aws:sns:eu-west-2:401739403606:KierensPhone"
     };
     sns.publish(params, context.done).promise()
-    .then((response) => console.log("success with response: "))
-    .catch((err) => console.error("failure with error: "));
+    .then((response) => console.log("success with response: " + JSON.stringify(response) ))
+    .catch((err) => console.error("failure with error: " + JSON.stringify(error) ));
 };
