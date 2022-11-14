@@ -17,5 +17,5 @@ exports.handler = function(event, context) {
     };
     sns.publish(params, context.done).promise()
     .then((response) => console.log("success with response: " + JSON.stringify(response) ))
-    .catch((err) => console.error("failure with error: " + JSON.stringify(error) ));
+    .catch((err) => console.error("failure with error: " + JSON.stringify(err) ));
 };
