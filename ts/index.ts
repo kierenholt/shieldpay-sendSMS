@@ -7,7 +7,7 @@ exports.handler = function(event, context) {
     var sns = new SNS();
     var bodyObj = JSON.parse(event.Records[0].body);
     var params = {
-        Message: bodyObj.Message, 
+        Message: bodyObj.Message + "-lambda", 
         Subject: "Test SNS From Lambda",
         PhoneNumber: bodyObj.Subject,
         //PhoneNumber: "+447986670340"
