@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "lib": ["ES2018", "dom"],
+    "moduleResolution": "node",
+    "module": "commonjs",
+    //"module": "none",
+    "outDir": "build",
+    "rootDir": "ts",
+    //"outFile": "./build/index.js",
+    //"sourceMap": true,
+    //"removeComments": true
+  },
+  "include": ["ts/*"],
+  "exclude": ["TRASH", "**/.*/", ".github", "./node_modules"]
+}

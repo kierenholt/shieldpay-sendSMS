@@ -1,0 +1,23 @@
+{
+  "name": "shieldpay-sendsms",
+  "version": "1.0.0",
+  "description": "# how it works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kierenholt/shieldpay-sendSMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kierenholt/shieldpay-sendSMS/issues"
+  },
+  "homepage": "https://github.com/kierenholt/shieldpay-sendSMS#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "aws-sdk": "^2.1254.0"
+  }
+}
