@@ -24,13 +24,17 @@ If PhoneNumber was specified, then the SMS went to the wrong SNS queue and was s
 
 ### learning these how these microservices fit together. Learning how to assign AWS roles and policies.
 
+# other bits
+
+- CI implemented using github action
+- includes typescript types 
+
 # still to do
 
-- use typescript somewhere in this project 
+- local development using AWS SAM 
 - use jest somewhere in this project
 - assess the security  
-
-
+- find a github action that moves multiple files 
 
 # brief
 
