@@ -6,7 +6,7 @@ export class MySMS {
 
         var sns = new SNS();
         var params = {
-            Message: message, 
+            Message: message,
             Subject: "Test SNS From Lambda",
             PhoneNumber: PhoneNumber,
             //PhoneNumber: "+447986670340"
