@@ -1,15 +1,15 @@
-import {describe, expect, test} from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 import { MySMS } from './sendSMS';
 
-describe('send sms method', () => {
-  test('returns ', async () => {
-    expect(
-        await MySMS.send("test message","+447986670340")
-        ).toBe(3);
-  });
+//TODO
+//SAM needs configuration
+test('SMS send test message', async () => {
+    MySMS.send("test message", "+447986670340").then(response => {
+        expect(response["ResponseMetadata"]).toBeDefined()
+    });
 });
 
-//example successful response
+//example SNS.publishResponse
 /*
 {
     "ResponseMetadata": {
