@@ -28,15 +28,15 @@ If PhoneNumber was specified, then the SMS went to the wrong SNS queue and was s
 # tests
 - one unit test (jest) which requires SAM set up information
 - integration test checkpoints:
-    API Gateway -> Cloudwatch
-    API Gateway -> Use Test function
-    SNS -> Cloudwatch
-    SQS -> Inject a message
-    SQS -> Monitoring
-    SNS -> Cloudwatch
-    Lambda -> Cloudwatch
-    SNS -> Text messaging -> Delivery status Logs
-    Mobile Phone
+    - API Gateway -> Cloudwatch
+    - API Gateway -> Use Test function
+    - SNS -> Cloudwatch
+    - SQS -> Inject a message
+    - SQS -> Monitoring
+    - SNS -> Cloudwatch
+    - Lambda -> Cloudwatch
+    - SNS -> Text messaging -> Delivery status Logs
+    - Mobile Phone
     
 - end to end:
     POSTman -> -> -> mobile phone
