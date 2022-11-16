@@ -52,7 +52,7 @@ If PhoneNumber was specified, then the SMS went to the wrong SNS queue and was s
 
 - local development using AWS SAM 
 - assess the security  
-- find a github action that moves multiple files 
+- find a github action that moves multiple files
 - use webpack
 
 # brief
