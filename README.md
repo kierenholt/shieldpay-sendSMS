@@ -13,8 +13,9 @@ POST request with query parameters is made to [APIGateway](https://eu-west-2.con
 ### figuring out the structure of the event passed into the lambda function
 My  aim was to get the gateway -> queue -> lambda working even if the message parameters were not correctly read.  Once I knew the data was there, I use error logs to read the event object and adjust until it worked fully.
 
-### creating permissions for the lambda to send SMS to any number, not just to a topic
-Some web searching was required
+### creating permissions / policies / roles
+1. for the lambda to use sns.publish -> any mobile number
+2. for the api gateway use sns.publish -> sns
 
 ### finding up to date documentation on SNS.publish() parameters
 More web searching was required 
@@ -26,13 +27,26 @@ If PhoneNumber was specified, then the SMS went to the wrong SNS queue and was s
 
 # tests
 - one unit test (jest) which requires SAM set up information
-- integration tests:
+- integration test checkpoints:
+    API Gateway -> Cloudwatch
+    API Gateway -> Use Test function
+    SNS -> Cloudwatch
+    SQS -> Inject a message
+    SQS -> Monitoring
+    SNS -> Cloudwatch
+    Lambda -> Cloudwatch
+    SNS -> Text messaging -> Delivery status Logs
+    Mobile Phone
     
+- end to end:
+    POSTman -> -> -> mobile phone
+
 
 # other bits
 
 - CI implemented using github action
 - includes typescript types 
+- implements a jest unit test
 
 # still to do
 
